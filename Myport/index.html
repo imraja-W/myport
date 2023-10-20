@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Simple Website</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 25px 0;
+  font-family: verdana;
+  background-color: #333; /* Background color for the header */
+            color: #fff; /* Text color for the header */
+}
+h2 {
+  text-align: center;
+  font-family: verdana;
+  margin-bottom: 20px;
+}
+section {
+  margin-bottom: 70px; /* Add space between sections */
+  margin-right: 10px;
+}
+p {
+  text-align: center;
+  font-family: verdana;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+ul li {
+  margin-right: 10px;
+  font-family: verdana;
+}
+ul li.right {
+  margin-left: auto;
+}
+ul li a {
+  padding: 5px 35px;
+  text-decoration: none;
+  transition: transform 0.8s ease-in-out;
+  border-radius: 15px;
+  background-color: #71a2cf; /* Background color for the header */
+            color: #fff; /* Text color for the header */
+}
+ul li a:hover {
+  transform: scale(1.1);
+  background-color: rgb(81, 110, 114);
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: powderblue;
+  min-width: 200px;
+  z-index: 1;
+  top: 30px; /* Add a desired value for the space */
+  margin-top: 10px; /* Add margin to create space */
+  left: 0;
+  white-space: nowrap;
+}
+#projects h2 {
+  margin-top: 80px; /* Add 5 spaces (50px) between the dropdown and h2 */
+  background-color: #308897; /* Background color for the header */
+            color: #fff; /* Text color for the header */
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: powderblue;
+  padding-bottom: 50px; /* Add empty space at the bottom */
+  position: relative; /* Add relative positioning */
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px; /* Add margin to create space for the footer */
+}
+footer {
+  background-color: powderblue;
+  padding: 20px;
+  text-align: center;
+  position: absolute; /* Change to absolute positioning */
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header style="margin-bottom: 10px;">
+<h1>Welcome to My Website</h1>
+</header>
+<nav>
+<ul>
+<li class="dropdown">
+<a href="#Project">Projects</a>
+<div class="dropdown-content">
+<p>Go to Projects</p>
+</div>
+</li>
+<li class="dropdown">
+<a href="#about">About</a>
+<div class="dropdown-content">
+<p>Go to about me</p>
+</div>
+</li>
+<li class="dropdown">
+<a href="#skills">Skills</a>
+<div class="dropdown-content">
+<p>Go to Skills</p>
+</div>
+</li>
+<li class="dropdown">
+<a href="#contact">Contact</a>
+<div class="dropdown-content">
+<p>Go to Contacts</p>
+</div>
+</li>
+</ul>
+</nav>
+<main>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>completed a project in collaboration with ICT, focusing on Microsoft Azure AI.</p>
+    <p style="text-align: center;"> &nbsp; &nbsp; &nbsp;The project centered around speech translation using Microsoft Azure AI. This project involved leveraging the power of Azure's AI services to translate spoken language in real-time.</p>
+  </section>
+<section id ="about">
+<h2 style="background-color: #308897; /* Background color for the header */
+color: #fff; /* Text color for the header */">About</h2>
+<p>My name is Raja Saravanan and I am currently studying BSc Computer Technology at SNMV College of Arts and Science. </p> 
+<p>I am passionate about programming and I am currently learning Python and JavaScript.</p>
+<p>While I am a beginner in JavaScript, I am eager to collaborate with other beginners like myself to create more projects. </p>
+<p>  &nbsp; &nbsp; &nbsp; &nbsp;I believe that working together with others who are at a similar level can provide a supportive and motivating environment for us to learn and grow together &nbsp; &nbsp;</p>
+</section>
+<section>
+  
+  <section id="skills" style="margin-bottom: 100px;">
+    <h2 style="background-color: #308897; /* Background color for the header */
+    color: #fff; /* Text color for the header */">Skills</h2>
+    <ul>
+      <li><strong>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Beginner in Python</strong></li>
+      <li><strong>Graphic Designing</strong></li>
+      <li><strong>Beginner in JavaScript &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2 style="background-color: #308897; /* Background color for the header */
+    color: #fff; /* Text color for the header */">Contact</h2>
+    <p>Git Hub</p>
+    <p><a href="https://github.com/imraja-W">https://github.com/imraja-W</a></p>
+    <p>Instagaram :</p>
+    <p><a href="https://instagram.com/_raja_saravanan__?igshid=OGQ5ZDc2ODk2ZA==">https://instagram.com/_raja_saravanan__?igshid=OGQ5ZDc2ODk2ZA<a></p>
+  </section>
+  <section id="Resume">
+    <h2 style="background-color: #308897; /* Background color for the header */
+    color: #fff; /* Text color for the header */">
+        <p>
+            I have added my Resume for reference.
+        </p>
+        <section>
+        <p>
+        <a href="https://drive.google.com/file/d/1iMfXj-Xd-1Kg8tawwzza1Ar7iuEEHIxm/view?usp=share_link"> Resume</a>
+        </p>
+        </section>
+        
+    </h2>
+
+  </section>
+</main>
+<footer>
+  <p>&copy; 2022 My Simple Website. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
